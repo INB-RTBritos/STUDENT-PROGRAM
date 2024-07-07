@@ -1,5 +1,5 @@
 #include <iostream>
-#include "ScheduleMenu.h"
+#include "src\ScheduleMenu.h"
 using namespace std;
 
 int main() {
@@ -13,10 +13,10 @@ int main() {
             sched.ViewSchedule();
             break;
         case 3:
-            // Edit
+            sched.EditSchedule();
             break;
         case 4:
-            // Delete
+            sched.DeleteSchedule();
             break;
         case 0: 
             return 0;

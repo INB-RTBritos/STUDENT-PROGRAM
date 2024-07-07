@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cctype>
 #include <string>
-#include "StudentMenu.h"
+#include "src\StudentMenu.h"
 
 using namespace std;
 
@@ -9,7 +9,7 @@ int main()
 {
     StudentDetails sNode;
     string firstName, lastName, middleName, degreeProgram, studentGender, studentAddress, birthMonthName, fullBirthday;
-    int idNumber, yearLevel, choice, counter = 0, birthDay, birthYear, birthMonthNum, idToView, idToEdit, idToDelete;
+    int idNumber, yearLevel, choice, counter = 0, birthDay, birthYear, birthMonthNum, idToView, idToEdit, idToDelete, sortChoice;
     sNode.FetchStudentInfo();
 
     while (true)
@@ -108,10 +108,8 @@ int main()
                 cout << "Enter ID Number (9-digit ID Number): ";
                 cin >> idNumber;
 
-                if (idNumber >= 201500000 && idNumber < 202500000)
+                if (sNode.IsValidStudentNum(idNumber))
                     break;
-                else
-                    cout << "Enter a Valid Student Number." << endl;
             }
 
             while (true)
@@ -143,17 +141,12 @@ int main()
         }
         case 2:
         {
-            cout << "\n\nDisplaying Students in order of Student Number:\n";
-            cout << "Student Number\t\tName" << endl;
-            sNode.ViewStudent(sNode.root);
-            cout << endl;
+            sNode.ViewStudents();
             break;
         }
         case 3:
         {
-            cout << "\n\nDisplaying Students in order of Student Number:\n";
-            cout << "Student Number\t\tName" << endl;
-            sNode.ViewStudent(sNode.root);
+            sNode.ViewStudents();
             cout << endl;
 
             while (true) // to edit
@@ -161,10 +154,8 @@ int main()
                 cout << "Enter Student Number to View: ";
                 cin >> idToView;
 
-                if (idToView >= 201500000 && idToView < 202500000)
+                if (sNode.IsValidStudentNum(idToView))
                     break;
-                else
-                    cout << "Enter a Valid Student Number." << endl;
             }
             
             sNode.ViewDetails(to_string(idToView));
@@ -173,9 +164,7 @@ int main()
         }
         case 4:
         {
-            cout << "\n\nDisplaying Students in order of Student Number:\n";
-            cout << "Student Number\t\tName" << endl;
-            sNode.ViewStudent(sNode.root);
+            sNode.ViewStudents();
             cout << endl;
 
             while (true) // to edit
@@ -183,10 +172,8 @@ int main()
                 cout << "Enter Student Number to Edit: ";
                 cin >> idToEdit;
 
-                if (idToEdit >= 201500000 && idToEdit < 202500000)
+                if (sNode.IsValidStudentNum(idToEdit))
                     break;
-                else
-                    cout << "Enter a Valid Student Number." << endl;
             }
 
             sNode.EditStudent(to_string(idToEdit));
@@ -197,9 +184,7 @@ int main()
         }
         case 5:
         {
-            cout << "\n\nDisplaying Students in order of Student Number:\n";
-            cout << "Student Number\t\tName" << endl;
-            sNode.ViewStudent(sNode.root);
+            sNode.ViewStudents();
             cout << endl;
 
             while (true) // to edit
@@ -207,10 +192,8 @@ int main()
                 cout << "Enter Student Number to Delete: ";
                 cin >> idToDelete;
 
-                if (idToDelete >= 201500000 && idToDelete < 202500000)
+                if (sNode.IsValidStudentNum(idToDelete))    
                     break;
-                else
-                    cout << "Enter a Valid Student Number." << endl;
             }
 
             sNode.DeleteStudent(to_string(idToDelete));

@@ -6,7 +6,7 @@
 #include <cctype>
 #include <stack>
 #include <list>
-#include "CourseCode.h"
+#include "src\CourseCode.h"
 
 using namespace std;
 
