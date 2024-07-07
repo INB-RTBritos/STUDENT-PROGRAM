@@ -1,0 +1,79 @@
+Project Details
+
+REQUIREMENTS
+
+Create a program which conforms to the following requirements:
+
+The program must use only the topics that we have discussed in this course ONLY.
+The program must observe the proper use of different programming concepts (basic IO, use of variables, control structures, operators, file management, functions, classes, data structures, etc).
+The program must have basic input error trapping (e.g. names must only accepts letters of the alphabet and other valid symbols).
+The program must implement simple error handling.
+The program must use at least one (1) of  the abstract data types discussed in this course.
+The program must use an external file/s (.txt) as the main repository of data/information used in the program. This file will be considered as your 'database'.
+ 
+
+PROJECT SPECIFICATION:
+
+The following must be observed in your program:
+
+The first screen that will be displayed must be a menu asking the user what they want to do and the name of the school, YOUR GROUPNAME MUST BE USED AS THE NAME OF THE SCHOOL. The menu must show the following:
+Enrolment
+Enroll a Student
+View List of Enrolees
+Student Management
+Add Student
+View Student List
+Edit Student
+Delete Student
+Schedule Management
+Add Schedule
+View Schedules
+Edit Schedule
+Delete Schedule
+Course Management
+Add Course
+View Courses
+Edit Course
+Delete Course
+Exit Program
+For Enrolment menu:
+Enroll a Student - this part of your program must let the user select the student (by entering their ID Number or their name). After the student has been selected, the program will then show the list of available courses. The user will then select which courses the student will enrol. Make sure that a course must not be enrolled twice by the same student and a student can only enroll courses for his/her year level.
+View List of Enrolees - this part of the program will display all the students that are currectly enrolled together with the courses they are enrolled in.
+For Student Management menu:
+Add Student - this is where the user will enter new student records. The information that must be entered are: id number, last name, first name, middle name, gender, birthday, address, degree program, and year level. Inputs must be trapped as a sort of validation. The program must not accept duplicate student record.
+View Student List - this shows ID Number and full names of all students in the program. The list must be sorted.
+Edit Student - this will allow the user edit the student information
+Delete Student - this will delete a student record.
+Schedule Management menu - this part of  the program lets the user set up the schedule that will be used for the enrolment.
+Add Schedule - this is where the user will create a new schedule for each course. The fields needed are: course code, course title, number of units, year level, section, day, time, and room. Note that some fields here must be automatically fetched for the courses.
+View Schedules - this will display all available schedule of all courses. The list must be sorted.
+Edit Schedule - this part is where the user will edit a particular schedule
+Delete Schedule - this is where the user can delete a schedule
+Course Management menu
+Add Course - part of the program where the user can add a new course to be offered. The fields needed are: course code, course title, number of units, and year level
+View Courses - part of the program which displays all available courses. The list must be sorted.
+Edit Course - part of the program which allows the user to edit a course
+Delete Course - part of the program which allows the user to delete a course
+Exit Program - the option which will end the program execution. The name of your group and the names of the members must show here.
+The program must always ask the user for confirmation for each operation or action the user wants to make.
+The program must always return to the main or higher level menu after each operation or action.
+The program must clear the screen after every operation or action (you may have to search from the internet how is it done).
+The program must ensure that the only way to stop the program execution is when the user selects the Exit Program menu.
+ 
+
+PROJECT RULES
+
+You are NOT ALLOWED to use other programming concepts that are not discussed in our course.
+Any group which will submit a project that was created using any form of cheating (use of AI, letting other people do the program, etc) will be FAILED for this project.
+The deadline of the project is July 13, 2024, at 11:59 PM. NO LATE SUBMISSION WILL BE ACCEPTED WHATEVER THE REASON.
+Create a video recording which demonstrates how your program works, make sure that someone from your group will explain each part of your project in your video demonstration. Upload your video to any public accessible platforms (Google Drive, YouTube, etc.)
+WHAT TO SUBMIT -  The following must be submitted: a zipped file (containing all your cpp files and other files that were needed or used in your program), a link to your video demonstration, and a Word or PDF file for the documentation of your project. Documentation template: Template for Final Project CCS0015.docxDownload Template for Final Project CCS0015.docx
+RUBRICS
+
+Your project will be graded as follows:
+
+Program Execution - 50
+Conformity to the Requirements and Standards - 25
+Project Documentation - 15
+Timeliness - 10
+TOTAL: 100
