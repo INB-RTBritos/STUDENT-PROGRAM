@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "CODE/DSA"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "iostream": "cpp",
+      "array": "cpp",
+      "string": "cpp",
+      "string_view": "cpp",
+      "*.tcc": "cpp",
+      "deque": "cpp",
+      "list": "cpp",
+      "unordered_map": "cpp",
+      "vector": "cpp",
+      "ostream": "cpp"
+    }
+  }
+}
